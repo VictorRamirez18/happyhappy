@@ -1,0 +1,43 @@
+.ff-p {
+    font-family: "Palatino Linotype";
+}
+.ff-l {
+    font-family: "Lucida Bright";
+}
+.high-blue {
+    color: #000080;
+}
+#cont-products .card-body {
+    background-color: #00BFFF;
+    font-family: Lucida Bright;
+    color: #000080;
+}
+#cont-products .col {
+    margin-top: 20px;
+}
+#cont-products .card {
+    -webkit-box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.72);
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.72);
+}
+#cont-products .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#cont-products .card-body .card-title {
+    font-weight: normal;
+    font-size: 3vh;
+}
+#cont-products .card-body .card-text {
+    font-weight: bold;
+    font-size: 4vh;
+    color: #000080;
+}
+#div-inversion {
+    color: #000080;
+    border: 2px solid #00BFFF;
+}
+#carouselExampleIndicators {
+    /*border: 2px solid red;*/
+    width: 70%;
+}

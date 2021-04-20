@@ -1,0 +1,27 @@
+#cont-slogan {
+    color: #000080;
+}
+#div-ubicanos {
+    background: url("../Images/Bottle.jpg") center;
+    background-size: cover;
+    height: 680px;
+}
+#div-ubicanos .title {
+    color: white;
+    font-family: Lucida Bright;
+}
+#div-ubicanos button {
+    background-color: #B0E0E6;
+    font-family: Lucida Bright;
+    color: #000080;
+    font-weight: bold;
+}
+#div-products {
+    background-color: #AFEEEE;
+}
+#div-products .btn-products {
+    height: 100npx;
+    background-image: url("../Images/Bulk.png");
+    background-position: center;
+    background-size: cover;
+}

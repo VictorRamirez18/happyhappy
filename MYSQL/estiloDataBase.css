@@ -1,0 +1,14 @@
+#body {
+    background-color: #0C77E8;
+}
+.azulHappyClaro {
+    background-color: #00BFFF;
+}
+.containerTableProductos {
+    overflow-x: scroll;
+}
+@media only screen and(max-width: 768px) {
+    .tablaProductos td {
+        width: auto;
+    }
+}

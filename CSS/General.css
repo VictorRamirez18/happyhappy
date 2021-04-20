@@ -1,0 +1,80 @@
+.ff-p {
+    font-family: "Palatino Linotype";
+}
+.ff-l {
+    font-family: "Lucida Bright";
+}
+.high-blue {
+    color: #000080;
+}
+header .navbar {
+    background-color: lightblue;
+}
+header .navbar li {
+    background-color: #F0FFFF;
+    font-family: "Palatino Linotype";
+    font-size: 20px;
+}
+footer {
+    background-image: url("../Images/aqua_fond.jpg");
+    background-position: center;
+    background-size: cover;
+}
+footer #div-icons {
+    padding: 0px;
+    height: 90px;
+}
+footer #div-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+footer #div-icons i {
+    font-size: 70px;
+    padding: 0px;
+}
+footer #whatsapp-icon {
+    color: #53CE60;
+}
+footer #facebook-icon {
+    color: #4267B2;
+}
+footer .text {
+    font-size: 3vw;
+}
+footer .a-up {
+    width: 10%;
+}
+#container-footer {
+    background-color: rgba(176, 224, 230, 0.81);
+}
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    z-index: 10;
+}
+.whatsapp i {
+    padding: 0px 2px;
+    border-radius: 10px;
+    color: #53CE60;
+    font-size: 10vh;
+    margin: 0px auto;
+    background-color: white;
+}
+.btn-up {
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .whatsapp {
+        bottom: 20px;
+    }
+    .whatsapp i {
+        font-size: 9vh;
+    }
+    footer .a-up {
+        text-align: center;
+        margin: auto;
+        width: 20%;
+    }
+}

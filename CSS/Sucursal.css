@@ -1,0 +1,17 @@
+#cont-map {
+    height: 500px;
+    background-image: url("../Images/Map.png");
+    background-position: center;
+    background-size: cover;
+}
+#form-contacto {
+    background-color: #00BFFF;
+    font-family: "Lucida Bright";
+    color: #000080;
+}
+#form-contacto button {
+    background-color: #AFEEEE;
+    align-self: center;
+    font-family: "Lucida Bright";
+    color: #000080;
+}
