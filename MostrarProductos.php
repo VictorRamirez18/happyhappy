@@ -1,5 +1,5 @@
 <?php  
-include("Conexion.php");
+include("ConexionProducts.php");
 $query = "SELECT * FROM productos";
 $resultado = $con->query($query);
 

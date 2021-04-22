@@ -31,7 +31,7 @@ if($validacionInputImagen){
 			$resultado = $con->query($query);
 
 			if(!$resultado){
-				echo "No funcionó";
+				header("Location: Error.php");
 			} else{
 				unset($producto);
 				unset($precio);
@@ -57,7 +57,7 @@ if($validacionInputImagen){
 	$resultado = $con->query($query);
 
 	if(!$resultado){
-		include("Error.php");
+		header("Location: Error.php");
 	} else{
 		header("Location: ProductosDataBase.php");
 	}

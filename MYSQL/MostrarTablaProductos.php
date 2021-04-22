@@ -20,11 +20,11 @@ if($varsession == null || $varsession = ''){
 		<?php  
 		include("Conexion.php");
 		$query = "SELECT * FROM productos";
-		$resultado = $con->query($query);
+		$resultadoOne = $con->query($query);
     
-    if(!$resultado){
+    if(!$resultadoOne){
 
-      include("Error.php");
+      header("Location: Error.php");
 
     } else {
 
@@ -63,8 +63,12 @@ if($varsession == null || $varsession = ''){
       <?php
       }
       $count+=1;
+
+      $query = "SELECT * FROM productos";
+      $resultado = $con->query($query);
+
   		while($row = $resultado->fetch_assoc()){
-      if($row['id'] === $lastId) return false;
+        if($row['id'] == $lastId){continue;}
   		?>
   		<tr class="bg-primary">
   			<td><?php echo $row['id'];?></td>
@@ -80,7 +84,7 @@ if($varsession == null || $varsession = ''){
   			<td>
           <form action="Eliminar.php" method="post" name="formulario<?php echo $count;?>">
             <input type="number" value="<?php echo $row['id'];?>" name="id" hidden>
-             <button type="button" class="btn btn-danger" id="<?php echo $count;?>" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="crearModal(this.id);">
+             <button type="button" class="btn btn-danger" id="<?php echo $count;?>" data-bs-toggle="modal" data-bs-target="#modalEliminarProducto" onclick="crearModal(this.id);">
               Eliminar
             </button>
           </form>

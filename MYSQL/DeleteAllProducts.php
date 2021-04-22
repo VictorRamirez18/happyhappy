@@ -6,10 +6,18 @@ if($varsession == null || $varsession = ''){
   die();
 }
 include("Conexion.php");
+
 $query = "DELETE FROM productos";
 $resultado = $con->query($query);
+
+$queryAutoIncrement = "ALTER TABLE productos AUTO_INCREMENT = 1";
+$resultadoResetIncrement = $con->query($queryAutoIncrement);
+
+if(!$resultadoResetIncrement){
+	echo "No funciono";
+}
 if(!$resultado){
-  include("Error.php");
+  header("Location: Error.php");
 } else{
 	header("Location: ProductosDataBase.php");
 }

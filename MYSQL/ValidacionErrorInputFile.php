@@ -8,7 +8,8 @@ if(!isset($mensajeError)){
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Validacion Inputs</title>
+	<link rel="icon" type="image/jpg" href="../Images/Logo.jpg"/>
 	<link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <script src="../JS/bootstrap.bundle.min.js"></script>
 </head>
@@ -16,6 +17,6 @@ if(!isset($mensajeError)){
 	<div class="alert alert-danger" role="alert">
 	  <?php echo $mensajeError;?>
 	</div>
-	<button onclick='window.history.back()'>Regresar</button>
+	<button onclick="location.href='ProductosDataBase.php'">Regresar</button>
 </body>
 </html>

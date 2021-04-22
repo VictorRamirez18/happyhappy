@@ -4,7 +4,7 @@
     <title id="title">Productos Happy Happy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Victor Ramirez">
+    <link rel="icon" type="image/jpg" href="Images/Logo.jpg"/>
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/Normalize.css">
     <link rel="stylesheet" href="CSS/General.css">
@@ -50,12 +50,12 @@
 	      <img src="Images/ImageCliente3.jpg" class="d-block w-100" alt="Purificadora Imagen 3">
 	    </div>
 	  </div>
-	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <button class="carousel-control-prev ms-3" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
 	    <span class="visually-hidden">Previous</span>
 	  </button>
-	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <button class="carousel-control-next me-3" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+	    <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
 	    <span class="visually-hidden">Next</span>
 	  </button>
 	</div>

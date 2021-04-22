@@ -5,10 +5,10 @@ if($varsession == null || $varsession = ''){
   header("Location: ../Admin.php");
   die();
 } 
-$servidor = "localhost";
-$usuario = "JohnDoe";
-$contrasena = "1234";
-$BD = "happyhappy";
+$servidor = "sql203.epizy.com";
+$usuario = $_SESSION['usuario'];
+$contrasena = $_SESSION['password'];
+$BD = "epiz_28426775_happyhappy";
 
 $con = mysqli_connect($servidor, $usuario, $contrasena, $BD);
 

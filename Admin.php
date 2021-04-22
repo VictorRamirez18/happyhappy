@@ -4,7 +4,7 @@
     <title>Admin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Victor Ramirez">
+    <link rel="icon" type="image/jpg" href="Images/Logo.jpg"/>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <script src="JS/bootstrap.bundle.min.js"></script>
     <style>
@@ -28,7 +28,7 @@
         </div>
         <div class="col">
           <label for="passwordInput" class="form-label my-2 fs-6">Contraseña</label>
-          <input type="text" name="password" class="form-control my-2" id="passwordInput" required>
+          <input type="password" name="password" class="form-control my-2" id="passwordInput" required>
           <div class="invalid-feedback">
             Ingrese su contraseña
           </div>

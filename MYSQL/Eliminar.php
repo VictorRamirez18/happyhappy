@@ -6,13 +6,12 @@ include ("Conexion.php");
 $filaId = $_POST['id'];
 
 $query = "DELETE FROM productos WHERE id=".$filaId;
-
 $resultado = $con->query($query);
 
 
 if(!$resultado){
-	include("Error.php");
+	header("Location: Error.php");
 } else{
-	include("ProductosDataBase.php");
+	header("Location: ProductosDataBase.php");
 }
 ?>

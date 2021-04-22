@@ -4,7 +4,7 @@
     <title id="title">Happy Happy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Victor Ramirez">
+    <link rel="icon" type="image/jpg" href="Images/Logo.jpg"/>
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/Normalize.css">
     <link rel="stylesheet" href="CSS/Index.css">
@@ -31,7 +31,7 @@
     </div>
     <!-- ***** -->
     <div class="container-fluid d-flex flex-column align-items-center justify-content-between mt-4 mb-5 p-4" id="div-ubicanos">
-    	<h2 class="title">Agua purificada de calidad</h2>
+    	<h2 class="title text-center">Agua purificada de calidad</h2>
     	<button type="button" class="p-3 fs-4" onclick="document.location = 'Surcursales.php'">Ubícanos</button>
     </div>
     <!-- **** -->

@@ -11,14 +11,14 @@
     border: 2px solid #707070;
 }
 #cont-mision {
-    height: 500px;
+    height: auto;
     background-image: url("../Images/Bote.png");
     background-position: top;
     background-size: cover;
     color: white;
 }
 #cont-vision {
-    height: 500px;
+    height: auto;
     background-image: url("../Images/EsferaAzul.png");
     background-position: center;
     background-size: contain;
@@ -28,6 +28,6 @@
     background-color: #AFEEEE;
 }
 #cont-propietario {
-    min-height: 300px;
+    min-height: auto;
     background-color: #B0E0E6;
 }

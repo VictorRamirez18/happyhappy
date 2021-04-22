@@ -7,6 +7,6 @@ $arregloArchivo = explode(".", $_FILES['imagen']['name']);
 $extension = strtolower(end($arregloArchivo));
 $validacionExtensionImagen = (in_array($extension, $extPermitidos));
 
-$tamano = 2000;
+$tamano = 10000;
 $validacionTamanoImagen = ($_FILES['imagen']['size'] < ($tamano * 1024));
 ?>

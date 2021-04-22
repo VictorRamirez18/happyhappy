@@ -4,7 +4,7 @@
     <title id="title">Empresa Happy Happy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Victor Ramirez">
+    <link rel="icon" type="image/jpg" href="Images/Logo.jpg"/>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/Normalize.css">
     <link rel="stylesheet" href="CSS/General.css">
@@ -43,15 +43,15 @@
       </div>
     </div>
     <!-- div -->
-    <div class="container p-4 mt-4 d-flex flex-column justify-content-between text-center" id="cont-mision">
-  		<h2 class="ff-l">Misión de la compañía</h2>
+    <div class="container p-4 my-5 d-flex flex-sm-wrap flex-column justify-content-between text-center" id="cont-mision">
+  		<h2 class="ff-l mb-4">Misión de la compañía</h2>
   		<p class="ff-l fs-3">Crecimiento industrial a nivel internacional de proveer agua de calidad a un precio accesible. Además de servir, encaminar y escuchar, para desarrollar ideas. Asimismo, llevando agua de una excelente calidad a cada hogar a un bajo costo</p>	
   	</div>
   	<!-- div vision -->
-  	<div class="container p-4 mt-4 d-flex flex-column justify-content-around text-center" id="cont-vision">
-  		<h2 class="ff-l high-blue">Visión de la compañía</h2>
-  		<div class="container p-4 border" id="div-vision">
-	  		<p class="ff-l fs-3 high-blue p-3">Crecimiento industrial a nivel internacional de proveer agua de calidad a un precio accesible. Además de servir, encaminar y escuchar, para desarrollar ideas. Asimismo, llevando agua de una excelente calidad a cada hogar a un bajo costo</p>	
+  	<div class="container-sm-fluid p-sm-4 my-5 d-flex flex-sm-wrap flex-column justify-content-around text-center" id="cont-vision">
+  		<h2 class="ff-l high-blue mb-4">Visión de la compañía</h2>
+  		<div class="container-sm p-sm-4 border" id="div-vision">
+	  		<p class="f-l fs-3 high-blue p-3">Crecimiento industrial a nivel internacional de proveer agua de calidad a un precio accesible. Además de servir, encaminar y escuchar, para desarrollar ideas. Asimismo, llevando agua de una excelente calidad a cada hogar a un bajo costo</p>	
   		</div>
   	</div>
   	<!-- div-propietario -->

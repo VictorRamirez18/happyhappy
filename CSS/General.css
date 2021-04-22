@@ -28,6 +28,7 @@ footer #div-icons a {
     display: flex;
     align-items: center;
     text-decoration: none;
+    height: 100px;
 }
 footer #div-icons i {
     font-size: 70px;
@@ -67,7 +68,8 @@ footer .a-up {
 }
 @media only screen and (max-width: 600px) {
     .whatsapp {
-        bottom: 20px;
+        bottom: 60px;
+        right: 10px;
     }
     .whatsapp i {
         font-size: 9vh;

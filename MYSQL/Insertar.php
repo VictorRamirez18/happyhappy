@@ -18,6 +18,7 @@ $precio = filter_var($precio, FILTER_SANITIZE_NUMBER_FLOAT);
 
 include("ValidarFile.php");
 
+var_dump($validacionInputImagen);
 if($validacionInputImagen && $validacionCamposVacios){
 
 	if($validacionExtensionImagen){
@@ -32,12 +33,14 @@ if($validacionInputImagen && $validacionCamposVacios){
 			$resultado = $con->query($query);
 
 			if(!$resultado){
-				include("Error.php");
+				header("Location: Error.php");
+				exit();
 			} else{
-				unset($_POST['producto']);
-				unset($_POST['precio']);
-				unset($_FILES['imagen']);
-				include("ProductosDataBase.php");
+				unset($_POST['producto'], $_POST['precio'], $_FILES['imagen']);
+				unset($producto, $precio, $imagen);
+				unset($validacionCamposVacios, $validacionInputImagen, $validacionTamanoImagen, $validacionExtensionImagen);
+				header("Location: ProductosDataBase.php");
+				exit();
 			}
 
 		} else{
