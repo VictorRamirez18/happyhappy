@@ -15,4 +15,9 @@
     font-family: "Lucida Bright";
     color: #000080;
 }
-.warning {}
+#form-contacto button:hover {
+    background-color: #AEC7F2;
+}
+.warning {
+    color: red;
+}

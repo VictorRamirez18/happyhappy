@@ -7,8 +7,9 @@
     <link rel="icon" type="image/jpg" href="Images/Logo.jpg"/>
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/Normalize.css">
-    <link rel="stylesheet" href="CSS/Index.css">
     <link rel="stylesheet" href="CSS/General.css">
+    <link rel="stylesheet" href="CSS/Index.css">
+    <link rel="stylesheet" href="CSS/animation.css">
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/85b2e44db4.js" crossorigin="anonymous"></script>
   </head>
@@ -32,7 +33,7 @@
     <!-- ***** -->
     <div class="container-fluid d-flex flex-column align-items-center justify-content-between mt-4 mb-5 p-4" id="div-ubicanos">
     	<h2 class="title text-center">Agua purificada de calidad</h2>
-    	<button type="button" class="p-3 fs-4" onclick="document.location = 'Surcursales.php'">Ubícanos</button>
+    	<button type="button" class="p-3 fs-4 scale2 hvr-icon-push" onclick="document.location = 'Surcursales.php'"><i class="fas fa-map-marker-alt hvr-icon"></i> Ubícanos</button>
     </div>
     <!-- **** -->
     <div class="container fs-1 text-center ff-l high-blue">¿Deseas crear tu propia purificadora?</div>
@@ -41,7 +42,10 @@
       <div class="row col-md">
         <div class="col-sm-7 p-4 text-center d-flex flex-column justify-content-around align-items-center ff-l high-blue">
           <h3 class="fw-bold">Tenemos distintos productos que te pueden interesar</h3>
-          <button type="button" class="p-3 fs-4 ff-l" onclick="document.location = 'Productos.php'">Ver productos</button>
+          <div class="div-btn-products p-5 hvr-pulse-grow">
+            <!-- <img src="Images/Bulk.png" alt=""> -->
+            <button type="button" class="ms-5 p-3 btn-products fs-4 ff-l hoverColorWhite" onclick="document.location = 'Productos.php'">Ver productos</button>
+          </div>
         </div>
         <div class="col-sm-5 d-flex align-items-center justify-content-center p-2 border">
             <img src="Images/EmpriseWater.jpg" class="img-fluid" loading="lazy"

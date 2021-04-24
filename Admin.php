@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/jpg" href="Images/Logo.jpg"/>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/animation.css">
     <script src="JS/bootstrap.bundle.min.js"></script>
     <style>
       body{
@@ -34,8 +35,8 @@
           </div>
         </div>
         <div class="col-sm-12 text-center d-flex justify-content-around px-4 mt-4">
-          <button type="button" class="my-2 btn btn-primary" onclick="location.href = 'Index.php'">Inicio</button>
-          <button type="submit" class="my-2 btn btn-warning">Ingresar</button>
+          <button type="button" class="my-2 btn btn-primary hvr-grow" onclick="location.href = 'Index.php'">Inicio</button>
+          <button type="submit" class="my-2 btn btn-warning hvr-grow">Ingresar</button>
         </div>
       </form>
     </div>

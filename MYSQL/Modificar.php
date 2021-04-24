@@ -15,7 +15,7 @@ $id = $_POST['id'];
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title></title>
+    <title>Modicar Producto</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/jpg" href="../Images/Logo.jpg"/>

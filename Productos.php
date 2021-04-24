@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/Normalize.css">
     <link rel="stylesheet" href="CSS/General.css">
     <link rel="stylesheet" href="CSS/Productos.css">
+    <link rel="stylesheet" href="CSS/animation.css">
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/85b2e44db4.js" crossorigin="anonymous"></script>
   </head>
@@ -21,8 +22,8 @@
 	<div class="container mx-auto my-4 col-md-10" id="div-inversion">
       <div class="row col-md">
         <div class="col-sm-7 p-4 text-center d-flex flex-column justify-content-around align-items-center">
-          <h3 class="fw-bold title ff-l">Total de Inversión</h3>
-          <h2 class="ff-l">$<?php echo $precioTotal;?> MXN</h2>
+          <h3 class="fw-bold title ff-l hoverColorBlue1">Total de Inversión</h3>
+          <h2 class="ff-l hoverColorBlue1">$<?php echo $precioTotal;?> MXN</h2>
         </div>
         <div class="col-sm-5 d-flex align-items-center justify-content-center p-4">
           <div class="col-md-7">
@@ -51,17 +52,19 @@
 	    </div>
 	  </div>
 	  <button class="carousel-control-prev ms-3" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-	    <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
+	    <span class="carousel-control-prev-icon bg-info p-sm-4" aria-hidden="true"></span>
 	    <span class="visually-hidden">Previous</span>
 	  </button>
 	  <button class="carousel-control-next me-3" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-	    <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
+	    <span class="carousel-control-next-icon bg-info p-sm-4" aria-hidden="true"></span>
 	    <span class="visually-hidden">Next</span>
 	  </button>
 	</div>
 	<!-- Dudas -->
 	<div class="container text-center ff-l fs-3 high-blue my-3">¿Tienes alguna pregunta?</div>
-	<div class="container text-center ff-l fs-3 high-blue my-3">Contáctanos</div>
+	<div class="d-flex justify-content-center hvr-icon-pop">
+		<button class="btn btn-info text-center ff-l fs-3 high-blue my-3 hvr-icon" onclick="location.href='Surcursales.php#contacto'">Contáctanos</button>
+	</div>
 	<?php include("WhatsappIcon.php");?>
 	<?php include("Footer.php");?>
 	<script src="JS/JavaScript.js"></script>

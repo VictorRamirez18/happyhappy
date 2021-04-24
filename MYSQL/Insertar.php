@@ -18,7 +18,6 @@ $precio = filter_var($precio, FILTER_SANITIZE_NUMBER_FLOAT);
 
 include("ValidarFile.php");
 
-var_dump($validacionInputImagen);
 if($validacionInputImagen && $validacionCamposVacios){
 
 	if($validacionExtensionImagen){

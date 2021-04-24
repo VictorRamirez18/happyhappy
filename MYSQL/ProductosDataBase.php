@@ -10,7 +10,7 @@ if($varsession == null || $varsession = ''){
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title></title>
+    <title>ProductosDataBase</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/jpg" href="../Images/Logo.jpg"/>
@@ -64,7 +64,7 @@ if($varsession == null || $varsession = ''){
     <!-- Botones Cerrar y Eliminar Elementos -->
     <div class="mt-3 d-flex justify-content-start">
       <button class="btn btn-warning mx-2 col-sm-1" data-bs-toggle="modal" data-bs-target="#modalCerrarSesion">Salir</button>
-      <button  class="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#modalResetIds">Reiniciar IDs</button>
+      <button  class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#modalResetIds">Reiniciar IDs</button>
       <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#firstModalDeleteElements">Eliminar todos los productos</button>
     </div>
 

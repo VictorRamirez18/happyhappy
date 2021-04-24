@@ -1,6 +1,12 @@
 #cont-slogan {
     color: #000080;
 }
+#cont-slogan h3:hover {
+    color: #0A32CC;
+}
+#cont-slogan h2:hover {
+    color: #0A32CC;
+}
 #div-ubicanos {
     background: url("../Images/Bottle.jpg") center;
     background-size: cover;
@@ -19,9 +25,17 @@
 #div-products {
     background-color: #AFEEEE;
 }
-#div-products .btn-products {
-    height: 100npx;
+.div-btn-products {
     background-image: url("../Images/Bulk.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btn-products {
+    background: none;
+    border: none;
+}
+#div-ubicanos button:hover {
+    background-color: #AEC7F2;
+    transition: background-color 0.4s;
 }

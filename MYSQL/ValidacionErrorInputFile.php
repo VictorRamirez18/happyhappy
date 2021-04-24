@@ -17,6 +17,6 @@ if(!isset($mensajeError)){
 	<div class="alert alert-danger" role="alert">
 	  <?php echo $mensajeError;?>
 	</div>
-	<button onclick="location.href='ProductosDataBase.php'">Regresar</button>
+	<button onclick="location.href='ProductosDataBase.php'" class="btn-info mx-2">Regresar</button>
 </body>
 </html>

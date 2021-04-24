@@ -1,6 +1,5 @@
 function page() {
     pagina = document.getElementById('title').text;
-    console.log(pagina);
     switch (pagina) {
         case "Happy Happy":
             document.getElementById('navIndex').style.background = "#CFE8E1";

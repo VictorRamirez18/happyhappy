@@ -15,6 +15,9 @@ header .navbar li {
     font-family: "Palatino Linotype";
     font-size: 20px;
 }
+header .navbar li a:hover {
+    background-color: #CFE8E1;
+}
 footer {
     background-image: url("../Images/aqua_fond.jpg");
     background-position: center;
@@ -74,9 +77,29 @@ footer .a-up {
     .whatsapp i {
         font-size: 9vh;
     }
+    header .navbar a img {
+        width: 4rem;
+    }
     footer .a-up {
         text-align: center;
         margin: auto;
         width: 20%;
     }
+}
+.scale1:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+.scale2:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+.hoverColorWhite:hover {
+    color: white;
+}
+.hoverColorBlue1:hover {
+    color: #0A32CC
+}
+.hoverBgBlue1:hover {
+    background-color: #AEC7F2;
 }

@@ -1,9 +1,9 @@
 <?php
 // error_reporting(0);
-$servidor = "sql203.epizy.com";
-$usuario = "epiz_28426775";
-$contrasena = "AdWr1YCI17q9gnf";
-$BD = "epiz_28426775_happyhappy";
+$servidor = "localhost";
+$usuario = "root";
+$contrasena = "";
+$BD = "happyhappy";
 
 $con = mysqli_connect($servidor, $usuario, $contrasena, $BD);
 
