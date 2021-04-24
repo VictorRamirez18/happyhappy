@@ -58,11 +58,6 @@
           <i class="fas fa-envelope hvr-icon"></i>
           <span>Enviar Mensaje</span>
         </button>
-        <span class="warning bg-warning fs-5 text-center mt-3">
-          <?php 
-          include("Validar.php");
-          ?>
-        </span>
       </form>
     </div>
   	
