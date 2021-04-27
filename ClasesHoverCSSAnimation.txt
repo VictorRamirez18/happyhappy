@@ -1,0 +1,10 @@
+pulge grow
+icon push
+icon pop
+bounce to right
+buzz out
+curl top left
+icon up
+border fade
+icon drop
+grow

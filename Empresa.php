@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="CSS/animation.css">
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/85b2e44db4.js" crossorigin="anonymous"></script>
+    <script src="JS/scrollreveal.js"></script>
   </head>
 
   <body onload="page()">
@@ -20,10 +21,10 @@
   	<div class="container mx-auto my-4 col-md-10">
       <div class="row col-md">
         <div class="col-sm-7 p-4 text-center d-flex flex-column justify-content-around align-items-center">
-          <h3 class="fw-bold title ff-l high-blue fs-1">Happy Happy Agua Purificada</h3>
+          <h3 class="fw-bold title ff-l high-blue fs-1 aniRight">Happy Happy Agua Purificada</h3>
         </div>
         <div class="col-sm-5 d-flex align-items-center justify-content-center p-4">
-          <div class="col-md-7 mydiv animate-bg scale2" id="logoHappyEmpresa">
+          <div class="col-md-7 mydiv animate-bg scale2 aniLeft" id="logoHappyEmpresa">
             <img src="Images/Logo.jpg" class="img-fluid" loading="lazy"
             alt="Logo Happy Happy">
           </div>
@@ -39,18 +40,18 @@
     <!-- splash -->
     <div class="container mx-auto my-4 p-4 col-md-5">
       <div class="row col-md">
-        <p class="fs-2 text-center fw-bold ff-l high-blue">Happy Happy</p>
-        <img src="Images/Splash.png" alt="Water splash"> 
+        <p class="fs-2 text-center fw-bold ff-l high-blue aniRotate">Happy Happy</p>
+        <img src="Images/Splash.png" alt="Water splash" class="aniRotate"> 
         <p class="fs-2 text-center fw-bold ff-l high-blue">Enfocada a Pymis y empresas</p> 
       </div>
     </div>
     <!-- div -->
-    <div class="container p-4 my-5 d-flex flex-sm-wrap flex-column justify-content-between text-center" id="cont-mision">
+    <div class="container p-4 my-5 d-flex flex-sm-wrap flex-column justify-content-between text-center aniRight" id="cont-mision">
   		<h2 class="ff-l mb-5">Misión de la compañía</h2>
   		<p class="mt-5 ff-l fs-3">Crecimiento industrial a nivel internacional de proveer agua de calidad a un precio accesible. Además de servir, encaminar y escuchar, para desarrollar ideas. Asimismo, llevando agua de una excelente calidad a cada hogar a un bajo costo</p>	
   	</div>
   	<!-- div vision -->
-  	<div class="container-sm-fluid p-sm-4 my-5 d-flex flex-sm-wrap flex-column justify-content-around text-center" id="cont-vision">
+  	<div class="container-sm-fluid p-sm-4 my-5 d-flex flex-sm-wrap flex-column justify-content-around text-center aniLeft" id="cont-vision">
   		<h2 class="ff-l high-blue mb-4">Visión de la compañía</h2>
   		<div class="container-sm p-sm-4 border hvr-curl-top-left" id="div-vision">
 	  		<p class="f-l fs-3 high-blue p-3">Crecimiento industrial a nivel internacional de proveer agua de calidad a un precio accesible. Además de servir, encaminar y escuchar, para desarrollar ideas. Asimismo, llevando agua de una excelente calidad a cada hogar a un bajo costo</p>	

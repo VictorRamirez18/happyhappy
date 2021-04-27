@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="CSS/animation.css">
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/85b2e44db4.js" crossorigin="anonymous"></script>
+    <script src="JS/scrollreveal.js"></script>
   </head>
 
   <body onload="page()">
   	<?php include("Navbar.php");?>
-  	 <div class="container mx-auto my-4 col-md-10" id="cont-slogan">
+  	 <div class="container mx-auto my-4 col-md-10 aniRight" id="cont-slogan">
       <div class="row col-md">
         <div class="col-sm-7 p-4 text-center d-flex flex-column justify-content-around align-items-center">
           <h3 class="fw-bold title ff-p">Happy Happy Agua Purificada</h3>
@@ -31,19 +32,18 @@
       </div>
     </div>
     <!-- ***** -->
-    <div class="container-fluid d-flex flex-column align-items-center justify-content-between mt-4 mb-5 p-4" id="div-ubicanos">
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-between mt-4 mb-5 p-4 ani" id="div-ubicanos">
     	<h2 class="title text-center">Agua purificada de calidad</h2>
-    	<button type="button" class="p-3 fs-4 scale2 hvr-icon-push" onclick="document.location = 'Surcursales.php'"><i class="fas fa-map-marker-alt hvr-icon"></i> Ubícanos</button>
+    	<button type="button" class="p-3 fs-4 scale2 hvr-icon-push aniOpacity" onclick="document.location = 'Surcursales.php'"><i class="fas fa-map-marker-alt hvr-icon"></i> Ubícanos</button>
     </div>
     <!-- **** -->
     <div class="container fs-1 text-center ff-l high-blue">¿Deseas crear tu propia purificadora?</div>
     <!-- ***** -->
-    <div class="container mx-auto my-5 col-md-10" id="div-products">
+    <div class="container mx-auto my-5 col-md-10 aniRight" id="div-products">
       <div class="row col-md">
         <div class="col-sm-7 p-4 text-center d-flex flex-column justify-content-around align-items-center ff-l high-blue">
           <h3 class="fw-bold">Tenemos distintos productos que te pueden interesar</h3>
           <div class="div-btn-products p-5 hvr-pulse-grow">
-            <!-- <img src="Images/Bulk.png" alt=""> -->
             <button type="button" class="ms-5 p-3 btn-products fs-4 ff-l hoverColorWhite" onclick="document.location = 'Productos.php'">Ver productos</button>
           </div>
         </div>

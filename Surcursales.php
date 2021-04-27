@@ -12,16 +12,17 @@
     <link rel="stylesheet" href="CSS/animation.css">
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/85b2e44db4.js" crossorigin="anonymous"></script>
+    <script src="JS/scrollreveal.js"></script>
   </head>
   <body onload="page()">
     <?php include("Navbar.php");?>
-  	<div class="container p-4 mt-4 d-flex flex-column justify-content-between text-center hvr-border-fade" id="cont-map">
+  	<div class="container p-4 mt-4 d-flex flex-column justify-content-between text-center hvr-border-fade aniRight" id="cont-map">
   		<h2 class="ff-l high-blue">Dirección</h2>
   		<p class="ff-l high-blue fs-3">Avenida Cuauhtemoc 120 local 5, Santa Catarina</p>	
   	</div>
   	<!-- Formulario -->
   	<div class="container text-center ff-l fs-3 high-blue my-3" id="contacto">Contáctanos</div>
-    <div class="container">
+    <div class="container aniBottom">
       <form action="<?php echo htmlspecialchars('Mail.php');?>" method="post" class="row  my-4 p-4 d-flex flex-column needs-validation" id="form-contacto" novalidate>
         <label for="input-nombre" value="<?php if(isset($name)) echo $name;?>" class="form-label col">Nombre:</label>
         <div class="col-md-6">
@@ -54,7 +55,7 @@
             Escribe tu mensaje.
           </div>
         </div>
-        <button type="submit" name="submit" class="btn d-flex justify-content-around align-items-center fs-5 p-2 mt-3 col-md-3 hvr-icon-drop hoverBgBlue1 scale1">
+        <button type="submit" name="submit" class="btn d-flex justify-content-around align-items-center fs-5 p-2 mt-3 col-md-3 hvr-icon-drop hoverBgBlue1 scale1 aniOpacity">
           <i class="fas fa-envelope hvr-icon"></i>
           <span>Enviar Mensaje</span>
         </button>

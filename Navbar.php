@@ -1,5 +1,5 @@
 <header>
-<nav class="navbar navbar-expand-sm" id="navbar">
+<nav class="navbar navbar-expand-sm aniBottom" id="navbar">
   <div class="container-fluid">
     <a href="Index.php" class="navbar-brand">
       <img src="Images/Logo.jpg" width="100" class="scale1" loading="lazy" alt="LogoHappyHappyPurificadora">

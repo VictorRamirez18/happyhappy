@@ -23,13 +23,9 @@ if(!empty($nombre) || !empty($correo) || !empty($correo) || !empty($telefono) ||
 	$mensaje="$mensaje"."\r\n";
 	$mensaje.="Numero de telefono: ".$telefono."\r\n";
 	$mensaje.="Correo: ".$correo;
-	// $header = "From: ". $correo."\r\n";
-	// $header.= "Reply-To: vramirez100443@ppsc.edu.mx"."\r\n";
-	// $header.="X-Mailer: PHP/".phpversion();
-	$mail = mail("vramirez100443@ppsc.edu.mx", $asunto, $mensaje);
+	$mail = mail("someone@example.com", $asunto, $mensaje);
 	if($mail){
 		header("Location: Surcursales.php");
-		// echo "Mensaje enviado correctamente";
 	} else{
 		echo "<p>Mensaje no se pudo enviar</p>";
 	}

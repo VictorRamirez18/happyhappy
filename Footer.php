@@ -1,4 +1,4 @@
-<footer class="container-fluid border mt-5 p-4">
+<footer class="container-fluid border mt-5 p-4 aniTop">
   <div class="row" id="container-footer">
     <div class="col-sm-8 d-flex justify-content-around flex-column">
       <p class="text-center text fs-4">Happy Happy Agua Purificada</p>

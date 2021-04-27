@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/animation.css">
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/85b2e44db4.js" crossorigin="anonymous"></script>
+    <script src="JS/scrollreveal.js"></script>
   </head>
 
   <body onload="page()">
@@ -19,11 +20,11 @@
   	<header class="text-center ff-l high-blue"><h2>Arma tu propia purificadora de agua</h2></header>
   	<?php include("MostrarProductos.php");?>
 	<!-- Contenedor total de inversion -->
-	<div class="container mx-auto my-4 col-md-10" id="div-inversion">
+	<div class="container mx-auto my-4 col-md-10 aniRight" id="div-inversion">
       <div class="row col-md">
         <div class="col-sm-7 p-4 text-center d-flex flex-column justify-content-around align-items-center">
           <h3 class="fw-bold title ff-l hoverColorBlue1">Total de Inversión</h3>
-          <h2 class="ff-l hoverColorBlue1">$<?php echo $precioTotal;?> MXN</h2>
+          <h2 class="ff-l hoverColorBlue1">$<?php echo number_format($precioTotal, 2, '.', ',');?> MXN</h2>
         </div>
         <div class="col-sm-5 d-flex align-items-center justify-content-center p-4">
           <div class="col-md-7">
