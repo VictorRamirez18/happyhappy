@@ -4,7 +4,7 @@
       <p class="text-center text fs-4">Happy Happy Agua Purificada</p>
       <div class="container d-flex justify-content-around" id="div-icons">
         <!-- <a href="#"><i class="fab fa-facebook-square" id="facebook-icon"></i></a> -->
-        <a href="https://wa.me/8123523388?" target="_blank" class="hvr-buzz-out"><i class="fab fa-whatsapp-square" id="whatsapp-icon"></i></a>
+        <a href="https://wa.me/4411162258?" target="_blank" class="hvr-buzz-out"><i class="fab fa-whatsapp-square" id="whatsapp-icon"></i></a>
       </div>
       <a href="#navbar" class="a-up">
         <div class="btn-up text-center bg-info p-1 hvr-icon-up" title="Ir al inicio de página">

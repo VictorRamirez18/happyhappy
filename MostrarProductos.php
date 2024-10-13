@@ -12,7 +12,7 @@ if(!$resultado){
 	while($row = $resultado->fetch_assoc()){;?>
 		<div class="col ">
 		    <div class="card h-100 scale2 aniCardProducto">
-		      <img src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']);?>" class="card-img-top h-100" alt="<?php echo $row['producto'];?>">
+		      <img src="<?php echo $row['imagen'];?>" class="card-img-top h-100" alt="<?php echo $row['producto'];?>">
 		      <div class="card-body">
 		        <h5 class="card-title"><?php echo $row['producto'];?></h5>
 		        <p class="card-text">$<?php echo $row['precio'];?> MXN</p>

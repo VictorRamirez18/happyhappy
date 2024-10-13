@@ -55,7 +55,7 @@
             Escribe tu mensaje.
           </div>
         </div>
-        <button type="submit" name="submit" class="btn d-flex justify-content-around align-items-center fs-5 p-2 mt-3 col-md-3 hvr-icon-drop hoverBgBlue1 scale1 aniOpacity">
+        <button type="submit" name="submit" class="btn d-flex justify-content-around align-items-center fs-5 p-2 mt-3 col-md-3 hvr-icon-drop hoverBgBlue1 scale1 aniOpacity" disabled>
           <i class="fas fa-envelope hvr-icon"></i>
           <span>Enviar Mensaje</span>
         </button>

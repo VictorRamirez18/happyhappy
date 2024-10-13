@@ -1,59 +1,86 @@
-<?php 
+<?php
 session_start();
-error_reporting(0);
-$varsession =  $_SESSION['usuario'];
-if($varsession == null || $varsession = ''){
-  header("Location: ../Admin.php");
-  die();
-}
-include("Conexion.php");
 
-$producto = trim($_POST['producto']);
-$precio = trim($_POST['precio']);
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
+    $varsession = $_SESSION['usuario'];
+    if ($varsession == null || $varsession == '') {
+        header("Location: ../Admin.php");
+        die();
+    }
 
-$validacionCamposVacios = (isset($producto) && isset($precio));
+    include("Conexion.php");
 
-$producto = filter_var($producto, FILTER_SANITIZE_SPECIAL_CHARS);
-$precio = filter_var($precio, FILTER_SANITIZE_NUMBER_FLOAT);
+    $producto = trim($_POST['producto']);
+    $precio = trim($_POST['precio']);
 
-include("ValidarFile.php");
+    $validacionCamposVacios = (!empty($producto) && !empty($precio));
 
-if($validacionInputImagen && $validacionCamposVacios){
+	$producto = filter_var($producto, FILTER_SANITIZE_SPECIAL_CHARS);
+    $precio = filter_var($precio, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
 
-	if($validacionExtensionImagen){
+    $uploadOk = 1;
+    $targetDir = "../Images/SubmittedProducts/";
+    $targetFile = $targetDir . basename($_FILES["imagen"]["name"]);
+    $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
 
-		if($validacionTamanoImagen){
+	$errorArchivo = $_FILES['imagen']['error'];
 
-			
-			$imagen = addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
-			
+    // Revisar si el archivo subido es realmente una imagen
+    $check = getimagesize($_FILES["imagen"]["tmp_name"]);
+    if ($check !== false) {
+        $uploadOk = 1;
+    } else {
+        echo "El archivo no es una imagen";
+        $uploadOk = 0;
+    }
 
-			$query = "INSERT INTO productos(producto, imagen, precio) VALUES('$producto','$imagen', $precio)";
+    // Si el archivo ya existía, eliminarlo.
+	if (file_exists($targetFile)) {
+		unlink($targetFile);
+		echo "Se eliminó el antiguo archivo";
+	}
+
+    // Revisar que el tamaño maximo de la imagen sea de 2MB
+    if ($_FILES["imagen"]["size"] > 2000000) {
+        echo "El tamaño del archivo supera los 2MB";
+        $uploadOk = 0;
+    }
+
+    // Sólo permitir ciertos formatos
+    $allowedExtensions = array("jpg", "png", "jpeg", "gif");
+    if (!in_array($imageFileType, $allowedExtensions)) {
+        echo "Sólo se aceptan archivos en formato JPG, JPEG, PNG o GIF";
+        $uploadOk = 0;
+    }
+
+    // Cancelar la inserción si hubo algún error con la imagen
+    if ($uploadOk == 0) {
+        echo "El archivo no se subió por algún error";
+    } else {
+        if (!is_dir($targetDir)) {
+            mkdir($targetDir, 0777, true);
+        }
+		if (move_uploaded_file($_FILES["imagen"]["tmp_name"], $targetFile)) {
+			echo "El archivo ". htmlspecialchars(basename($_FILES["imagen"]["name"])). " se ha subido correctamente";
+		
+			$targetFile = substr($targetFile, 3);
+			echo $targetFile;
+			$query = "INSERT INTO productos(producto, imagen, precio) VALUES('$producto', '$targetFile', $precio)";
 			$resultado = $con->query($query);
-
-			if(!$resultado){
-				header("Location: Error.php");
+		
+			if (!$resultado) {
+				error_log("Hubo un error al insertar el producto: " . $con->error);
+				header("Lcation: Error.php");
 				exit();
-			} else{
-				unset($_POST['producto'], $_POST['precio'], $_FILES['imagen']);
-				unset($producto, $precio, $imagen);
-				unset($validacionCamposVacios, $validacionInputImagen, $validacionTamanoImagen, $validacionExtensionImagen);
+			} else {
 				header("Location: ProductosDataBase.php");
 				exit();
 			}
-
-		} else{
-			$mensajeError = "Tamaño Excedido";
-			include('ValidacionErrorInputFile.php');
-		}
 		
-
-	} else{
-		$mensajeError = "Archivo con extension no permitida";
-		include('ValidacionErrorInputFile.php');
+		} else {
+			echo "Hubo un error subiendo el archivo.";
+		}
 	}
-	
-} else{
-	$mensajeError = "Es necesario llenar todos los datos";
-	include('ValidacionErrorInputFile.php');}
+}
 ?>

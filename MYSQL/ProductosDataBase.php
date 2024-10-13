@@ -64,7 +64,6 @@ if($varsession == null || $varsession = ''){
     <!-- Botones Cerrar y Eliminar Elementos -->
     <div class="mt-3 d-flex justify-content-start">
       <button class="btn btn-warning mx-2 col-sm-1" data-bs-toggle="modal" data-bs-target="#modalCerrarSesion">Salir</button>
-      <button  class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#modalResetIds">Reiniciar IDs</button>
       <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#firstModalDeleteElements">Eliminar todos los productos</button>
     </div>
 
@@ -101,26 +100,6 @@ if($varsession == null || $varsession = ''){
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
             <button type="button" class="btn btn-primary" onclick="location.href = 'CerrarSesion.php';" id="btnAceptarModal">Aceptar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Modal Reiniciar IDs-->
-    <div class="modal fade text-center" id="modalResetIds" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Reiniciar IDs</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body fs-5 text-warning">
-            ¿Desea reiniciar los IDs?
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-warning" onclick="location.href = 'ReordenarId.php';" id="btnAceptarModal">Aceptar</button>
           </div>
         </div>
       </div>

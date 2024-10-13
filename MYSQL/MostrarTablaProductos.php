@@ -43,7 +43,7 @@ if($varsession == null || $varsession = ''){
       <tr class="text-success fw-bold">
         <td><?php echo $lastRow['id'];?></td>
         <td><?php echo $lastRow['producto'];?></td>
-        <td><img height="70px" src="data:image/jpg;base64, <?php echo base64_encode($lastRow['imagen']);?>" alt=""></td>
+        <td><img height="70px" src="../<?php echo $lastRow['imagen'];?>" alt=""></td>
         <td><?php echo $lastRow['precio'];?></td>
         <td>
           <form action="Modificar.php" method="POST">
@@ -73,7 +73,7 @@ if($varsession == null || $varsession = ''){
   		<tr class="bg-primary">
   			<td><?php echo $row['id'];?></td>
   			<td><?php echo $row['producto'];?></td>
-  			<td><img height="70px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']);?>" alt=""></td>
+  			<td><img height="70px" src="../<?php echo $row['imagen'];?>" alt=""></td>
         <td><?php echo $row['precio'];?></td>
   			<td>
           <form action="Modificar.php" method="post">
